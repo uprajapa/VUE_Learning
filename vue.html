@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practise</title>
+    </head>
+    <body>
+        <center><h2>Practise Store</h2></center>
+        <div id="app">
+            Hello, {{ name }}        
+        
+            <div>
+                <img :src="imageSource">
+            </div>
+            <div v-for="image in images" :key="image.imgId">
+                <button @click="updateImg(image.imgSrc)">{{ image.imgId }}</button>       
+            </div>
+        </div>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="VUE.js"></script>
+    </body>
+</html>
