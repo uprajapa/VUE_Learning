@@ -12,8 +12,7 @@ var app = new Vue({
             imgId: 2,
             imgSrc: 'img/2.jpg'
             }
-        ]   ,
-        
+        ]   ,        
     },
     methods:{
         updateImg: function(imgSrc){
